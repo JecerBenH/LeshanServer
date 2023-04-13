@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="MavenPackageUpdate" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="excludeList">
+        <list>
+          <option value="org.eclipse.jetty:jetty-servlets" />
+          <option value="org.eclipse.jetty:jetty-webapp" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="MisspelledHeader" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="CUSTOM_HEADERS">
+        <header value="Build-Jdk-Spec" />
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
