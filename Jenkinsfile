@@ -29,6 +29,22 @@ pipeline{
             }
         }
 
+        stage('Build Docker Image'){
+                     steps {
+                           script{
+                  	          sh 'docker image build  -t jecer1997:latest .  '
+                           }
+                     }
+        }
+
+        stage('Run Docker Image'){
+                             steps {
+                                   script{
+                          	          sh 'docker run jecer1997:latest'
+                                   }
+                             }
+                }
+
 
     }
     }
