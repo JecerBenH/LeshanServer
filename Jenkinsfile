@@ -40,7 +40,7 @@ pipeline{
         stage('Run Docker Image'){
                              steps {
                                    script{
-                          	          sh 'docker run -d --name lwm2mserverContainer -p 5683:5683/udp -p 8080:8080/http jecer1997:latest  '
+                          	          sh 'docker run -d --name lwm2mserverContainer -p 5683:5683/udp -p 777:8080/tcp jecer1997:latest  '
                                    }
                              }
                 }
