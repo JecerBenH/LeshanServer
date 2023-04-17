@@ -37,13 +37,22 @@ pipeline{
             }
         }
 
-        stage('Run Docker Image'){
+        /*stage('Run Docker Image'){
             steps {
                 script{
                     sh 'docker run -d --rm --name LeshanServerContainer -p 5683:5683/udp -p 8081:8080/tcp jecer1997/leshan:latest  '
                 }
             }
-        }
+        }*/
+
+        stage('Docker Compose Run Containers'){
+                    steps {
+                        script{
+                            sh 'docker-compose up -d '
+                        }
+                    }
+                }
+
 
 
     }
