@@ -32,7 +32,7 @@ pipeline{
         stage('Build Docker Image'){
                      steps {
                            script{
-                  	          sh 'docker image build  -t jecer1997:latest .  '
+                  	          sh 'docker image build  -t jecer1997/leshan:latest .  '
                            }
                      }
         }
@@ -40,7 +40,7 @@ pipeline{
         stage('Run Docker Image'){
                              steps {
                                    script{
-                          	          sh 'docker run -d --rm --name lwm2mserverContainer -p 5683:5683/udp -p 8081:8080/tcp jecer1997:latest  '
+                          	          sh 'docker run -d --rm --name LeshanServerContainer -p 5683:5683/udp -p 8081:8080/tcp jecer1997:latest  '
                                    }
                              }
                 }
