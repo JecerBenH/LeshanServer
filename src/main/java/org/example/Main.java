@@ -44,7 +44,7 @@ public class Main {
 
         final Logger LOG = LoggerFactory.getLogger(Main.class);
 
-        String webAdress="localhost";
+        String webAdress="172.18.0.2";
         PublicKey publicKey = null;
         PrivateKey privateKey = null;
 
