@@ -98,9 +98,9 @@ public class Main {
 
         InetSocketAddress jettyAddr;
         if (webAddress == null) {
-            jettyAddr = new InetSocketAddress(8080);
+            jettyAddr = new InetSocketAddress(8081);
         } else {
-            jettyAddr = new InetSocketAddress(webAddress, 8080);
+            jettyAddr = new InetSocketAddress(webAddress, 8081);
         }
         Server webServer = new Server(jettyAddr);
         WebAppContext root = new WebAppContext();
