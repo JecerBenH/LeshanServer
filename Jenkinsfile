@@ -51,6 +51,14 @@ pipeline{
                             sh 'docker-compose up -d --remove-orphans '
                         }
                     }
+        }
+
+         stage('Docker cleanup'){
+                            steps {
+                                script{
+                                    sh ' docker image prune -f '
+                                }
+                            }
                 }
 
 
