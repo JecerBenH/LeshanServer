@@ -1,9 +1,15 @@
 version: "3"
 services:
-  backend:
+  leshanServer:
     container_name: LeshanServerContainer
     image: jecer1997/leshan
     restart: always
     ports:
       - "8081:8081/tcp"
+      - "5683:5683/udp"
+  anjayClient:
+    container_name: AnjayClientContainer
+    image: jecer1997/anjay
+    restart: always
+    ports:
       - "5683:5683/udp"
