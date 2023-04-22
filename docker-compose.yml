@@ -6,10 +6,10 @@ services:
     restart: always
     ports:
       - "8081:8081/tcp"
-      - "5682:5683/udp"
+      - "5683:5683/udp"
   anjayClient:
     container_name: AnjayClientContainer
     image: jecer1997/anjay
     restart: always
     ports:
-      - "5682:5683/udp"
+      - "5683:5683/udp"
